@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="ramjidentalcom.ramjidentalservices.ClientPanel.ClientDashboard"
+    tools:showIn="@layout/client_dashboard">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="3dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/cardview">
+
+            <ImageButton
+                android:layout_marginTop="15dp"
+                android:layout_width="100dp"
+                android:layout_marginBottom="15dp"
+                android:layout_height="100dp"
+                android:background="#fff"
+                android:id="@+id/addadmin"
+                android:scaleType="fitXY"
+                android:src="@drawable/client"
+                android:layout_alignTop="@+id/imageButton"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_gravity="center_horizontal" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:text="View Profile"
+            android:textSize="16sp"
+            android:textColor="#000"
+            android:elevation="4dp"
+            android:textAlignment="center"
+            android:paddingTop="10dp"
+            android:id="@+id/clntprofile"
+            android:background="@color/colorPrimary"
+            android:layout_gravity="center_horizontal" />
+
+    </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="4dp"
+            android:layout_marginTop="8dp">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/cardview">
+
+                <ImageView
+                    android:layout_marginTop="15dp"
+                    android:layout_width="100dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_height="100dp"
+                    android:scaleType="fitXY"
+                    android:id="@+id/clntcustomers"
+                    android:background="#fff"
+                    android:src="@drawable/admit"
+                    android:layout_gravity="center_horizontal" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:text="Patients Admitted"
+                android:textSize="16sp"
+                android:textColor="#000"
+                android:elevation="4dp"
+                android:textAlignment="center"
+                android:paddingTop="10dp"
+                android:id="@+id/admittedclntcust"
+                android:background="@color/colorPrimary"
+                android:layout_gravity="center_horizontal" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

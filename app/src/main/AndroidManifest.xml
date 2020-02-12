@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ramjidentalcom.ramjidentalservices">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:name=".ReceiverInitiator"
+        android:allowBackup="true"
+        android:icon="@mipmap/launcher_icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".HomePage"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LoginScanner"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AdminPanel.AdminDashboard"
+            android:label="@string/title_activity_admin_dashboard"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".EmployeePanel.EmployeeDashboard"
+            android:label="@string/title_activity_employee_dashboard"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ClientPanel.ClientDashboard"
+            android:label="@string/title_activity_client_dashboard"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".PatientPanel.PatientDashboard"
+            android:label="@string/title_activity_patient_dashboard"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".OwnerPanel.OwnerDashboard"
+            android:label="@string/title_activity_owner_dashboard"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".OwnerPanel.AdminScanner" />
+        <activity
+            android:name=".OwnerPanel.AddAdmin"
+            android:label="@string/title_activity_add_admin"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".OwnerPanel.ViewAdmin"
+            android:label="@string/title_activity_view_admin"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".OwnerPanel.EditAdmin"
+            android:label="@string/title_activity_edit_admin"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".OwnerPanel.Edit_AddAdmin"
+            android:label="@string/title_activity_edit__add_admin"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".OwnerPanel.ChooseView"
+            android:label="@string/title_activity_choose_view"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".OwnerPanel.AdminsList"
+            android:label="@string/title_activity_admins_list"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".OwnerPanel.PatientList"
+            android:label="@string/title_activity_patient_list"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".OwnerPanel.EmployeeList"
+            android:label="@string/title_activity_employee_list"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".OwnerPanel.ClientList"
+            android:label="@string/title_activity_client_list"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AdminPanel.Registrations.EmployeeRegistration"
+            android:label="@string/title_activity_employee_registration"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AdminPanel.Registrations.PatientRegistration"
+            android:label="@string/title_activity_patient_registration"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AdminPanel.Registrations.ClientRegistration"
+            android:label="@string/title_activity_client_registration"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AdminPanel.Scanners.EmployeeScanner"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AdminPanel.Scanners.PatientScanner"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AdminPanel.Scanners.ClientScanner"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AdminPanel.Viewers.EmployeeViewer"
+            android:label="All Employees"
+            android:screenOrientation="portrait"
+            android:theme="@style/PatientViewerTheme" />
+        <activity
+            android:name=".AdminPanel.Viewers.PatientViewer"
+            android:label="All Patients"
+            android:screenOrientation="portrait"
+            android:theme="@style/PatientViewerTheme" />
+        <activity
+            android:name=".AdminPanel.Viewers.ClientViewer"
+            android:label="All Clients"
+            android:screenOrientation="portrait"
+            android:theme="@style/PatientViewerTheme" />
+        <activity
+            android:name=".AdminPanel.Scanners.ClntCustScanner"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AdminPanel.Registrations.ClntCustRegistration"
+            android:label="@string/title_activity_clnt_cust_registration"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".AdminPanel.Scanners.CheckCustScanner" />
+        <activity
+            android:name=".AdminPanel.Registrations.PatientUpdation"
+            android:label="@string/title_activity_patient_updation"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AdminPanel.Viewers.ClntCustViewer"
+            android:label="All Client Customers"
+            android:screenOrientation="portrait"
+            android:theme="@style/PatientViewerTheme" />
+        <activity
+            android:name=".AdminPanel.Registrations.ClntCustUpdation"
+            android:label="@string/title_activity_clnt_cust_updation"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ClientPanel.CheckPatients"
+            android:label="@string/title_activity_check_patients"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".EmployeePanel.Scanner_Patient"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".EmployeePanel.CaseHistory"
+            android:label="@string/title_activity_case_history"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".EmployeePanel.AddPatient"
+            android:label="@string/title_activity_add_patient"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ClientPanel.ClientProfile"
+            android:label="@string/title_activity_client_profile"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".EmployeePanel.EmployeeProfile"
+            android:label="@string/title_activity_employee_profile"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".PatientPanel.PatDashboard"
+            android:label="@string/title_activity_pat_dashboard"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <receiver
+            android:name=".ConnectivityReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".OwnerPanel.DeleteAdmin"
+            android:label="@string/title_activity_delete_admin"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AdminPanel.Registrations.PatientRegistration11"
+            android:label="@string/title_activity_patient_registration11"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Appointment"
+            android:label="@string/title_activity_appointment"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AdminPanel.Edit.EditEmployee"
+            android:label="@string/title_activity_edit_employee"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AdminPanel.Edit.EditClient"
+            android:label="@string/title_activity_edit_client"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AdminPanel.Registrations.ClntCustRegistration11"
+            android:label="@string/title_activity_clnt_cust_registration11"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".PatientPanel.PatientImages"
+            android:label="@string/title_activity_patient_images"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AdminPanel.Registrations.UpdateCustImage"
+            android:label="@string/title_activity_update_cust_image"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AdminPanel.Registrations.PatientImageRegistration"
+            android:label="@string/title_activity_patient_image_registration"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AdminPanel.Registrations.UpdateClntCustImage"
+            android:label="@string/title_activity_update_clnt_cust_image"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AdminPanel.Registrations.ClntCustImageRegistration"
+            android:label="@string/title_activity_clnt_cust_image_registration"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+    </application>
+
+</manifest>

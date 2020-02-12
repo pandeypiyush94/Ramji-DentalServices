@@ -1,0 +1,60 @@
+<resources>
+    <string name="app_name">Ramji Dental Services</string>
+    <string name="title_activity_admin_dashboard">Admin Dashboard</string>
+    <string name="title_activity_employee_dashboard">Employee Dashboard</string>
+    <string name="title_activity_client_dashboard">Client Dashboard</string>
+    <string name="title_activity_patient_dashboard">Patient Dashboard</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_owner_dashboard">Owner Dashboard</string>
+    <string name="title_activity_add_admin">Add Admin</string>
+    <string name="title_activity_view_admin">View Admin</string>
+    <string name="title_activity_edit_admin">Edit Admin</string>
+    <string name="title_activity_edit__add_admin">Add Admin</string>
+    <string name="title_activity_choose_view">What To View</string>
+    <string name="title_activity_admins_list">Admins</string>
+    <string name="title_activity_patient_list">Patients</string>
+    <string name="title_activity_employee_list">Employees</string>
+    <string name="title_activity_client_list">Clients</string>
+    <string name="title_activity_employee_registration">Register Employee</string>
+    <string name="title_activity_patient_registration">Register Patient</string>
+    <string name="title_activity_client_registration">Register Client</string>
+    <string name="title_activity_employee_viewer">Employees</string>
+    <string name="title_activity_clnt_cust_registration">Register Patient</string>
+    <string name="title_activity_patient_updation">Review Patient</string>
+    <string name="title_activity_clnt_cust_viewer">Client Patients</string>
+    <string name="title_activity_clnt_cust_updation">Update Details</string>
+    <string name="title_activity_client_profile">Profile</string>
+    <string name="title_activity_check_patients">Check Patients</string>
+    <string name="title_activity_case_history">Case History</string>
+    <string name="title_activity_add_patient">Patient Details</string>
+    <string name="title_activity_employee_profile">Profile</string>
+    <string name="title_activity_pat_dashboard">Patient Dashboard</string>
+    <string name="title_activity_delete_admin">Delete Admin</string>
+    <string name="title_activity_patient_registration1">Patient Registration</string>
+    <string name="title_activity_patient_registration11">Patient Registration</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity_appointment">Make Appointment</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="title_activity_edit_employee">Edit Employee</string>
+    <string name="title_activity_edit_client">Edit Client</string>
+    <string name="title_activity_clnt_cust_registration11">Patient Registration</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_patient_images">Patient Images</string>
+    <string name="title_activity_update_cust_image">Update Images</string>
+    <string name="title_activity_patient_image_registration">Patient Image Registration</string>
+    <string name="title_activity_update_clnt_cust_image">Update Image</string>
+    <string name="title_activity_clnt_cust_image_registration">Register Patient Image</string>
+</resources>
